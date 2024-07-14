@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fibonacci Generator</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Fibonacci Generator</h1>
+  <div class="container">
+    <form id="fibForm">
+      <select name="fibType" id="fibType">
+        <option value="term">Display nth term of Fibonacci sequence</option>
+        <option value="sequence">Display the first n Fibonacci numbers</option>
+      </select>
+      <br>
+      <input type="number" name="numberInput" id="numberInput" placeholder="Enter a number">
+      <br>
+      <button type="button" onclick="generateFibonacci()">Generate</button>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="/static/logic.js"></script>
+</body>
+</html>
